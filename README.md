@@ -1,6 +1,14 @@
 # DP - Dynamic Programming
 ## Defs
-Dynamic Programming: a time-saving storage-based technique, in place of brute force recursion for runtime efficiency. The main idea to split a problem into sub-problems and reuse the results. Sub-problems are smaller versions of the original problem.
+Dynamic Programming: a time-saving storage-based technique, in place of brute force recursion for runtime efficiency. The are two ideas behind it:
+* to split a problem into identified and solved subproblems 
+* to merge subproblems results together to solve the problem. 
+
+Sub-problems are smaller versions of the original problem and to *find subproblems* for the original one - the most challenging part. Common subproblems:
+* if a sequence is as Input, subproblem can be the part of this sequence (from the beggining or in the middle)
+* if unordered sequence is as Input, it can be firstly sorted and subproblem can be the part of the sorted sequence
+* if two sequences in input, the appropriate subset of both can be a subproblem
+* if a matrix is as input, subproblem could be a matrix with the less dimension as the original one
 
 Dynamic programming based on principle of optimality: if all steps of a process are optimized, then the result is also optimized. The optimal step: takes the least amount of time or takes the fewest new computations.
 
